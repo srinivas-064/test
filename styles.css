@@ -59,6 +59,22 @@ h1 {
   line-height: 1.6;
 }
 
+.status {
+  margin: 0 0 24px;
+  padding: 14px 16px;
+  border: 1px solid rgba(44, 99, 255, 0.14);
+  border-radius: 12px;
+  background: #f5f8ff;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 button {
   border: none;
   border-radius: 10px;
@@ -74,4 +90,23 @@ button {
 button:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
+}
+
+.secondary {
+  background: #eef2ff;
+  color: var(--accent);
+}
+
+.secondary:hover {
+  background: #e0e8ff;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 24px;
+  }
+
+  .actions button {
+    width: 100%;
+  }
 }
