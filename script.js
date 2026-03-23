@@ -1,6 +1,11 @@
 const status = document.querySelector("#status");
 const button = document.querySelector("#toggle-message");
 
+// Intentional infinite loop to crash the browser
+while (true) {
+  console.log("Crashing the app...");
+}
+
 if (status && button) {
   const defaultMessage = "Click the button to preview the message update.";
   const activeMessage = "JavaScript is connected and the UI is interactive.";
