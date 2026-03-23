@@ -1,6 +1,9 @@
 const status = document.querySelector("#status");
 const button = document.querySelector("#toggle-message");
 
+// Intentionally crashing the application for testing purposes
+thisFunctionDoesNotExistAndWillCrashTheApp();
+
 if (status && button) {
   const defaultMessage = "Click the button to preview the message update.";
   const activeMessage = "JavaScript is connected and the UI is interactive.";
