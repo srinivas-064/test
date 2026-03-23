@@ -9,6 +9,17 @@
   --shadow: 0 14px 36px rgba(19, 40, 92, 0.16);
 }
 
+[data-theme="dark"] {
+  --bg-start: #11141e;
+  --bg-end: #1a1e2d;
+  --card-bg: #232838;
+  --text-main: #f2f7ff;
+  --text-muted: #9ba3b5;
+  --accent: #4a7dff;
+  --accent-hover: #3b66d9;
+  --shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
+}
+
 * {
   box-sizing: border-box;
 }

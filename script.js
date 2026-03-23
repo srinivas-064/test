@@ -14,3 +14,11 @@ if (status && button) {
     button.setAttribute("aria-pressed", String(active));
   });
 }
+
+const themeToggle = document.querySelector("#toggle-theme");
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    document.documentElement.setAttribute("data-theme", isDark ? "light" : "dark");
+  });
+}
